@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Link as LinkIcon, Send, Copy, Check } from 'lucide
 import { useState } from 'react';
 import './Contacts.css';
 
-export default function Contacts() {
+function Contacts() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
@@ -72,3 +72,6 @@ export default function Contacts() {
     </div>
   );
 }
+
+
+export default Contacts;

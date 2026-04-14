@@ -1,10 +1,8 @@
-/* ===== HOME PAGE ===== */
 .home {
   display: flex;
   flex-direction: column;
 }
 
-/* Hero */
 .hero {
   min-height: calc(100vh - 64px);
   display: flex;
@@ -142,7 +140,6 @@
   60% { transform: translateY(4px); }
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -180,7 +177,6 @@
   transform: translateY(-1px);
 }
 
-/* Section */
 .section {
   padding: 80px 24px;
   opacity: 0;
@@ -215,7 +211,6 @@
   border-radius: 2px;
 }
 
-/* About */
 .about__text,
 .about__fun {
   max-width: 680px;
@@ -269,7 +264,6 @@
   font-size: 14px;
 }
 
-/* Skills */
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -314,7 +308,6 @@
   height: 16px;
 }
 
-/* Qualities */
 .qualities__list {
   list-style: none;
   padding: 0;
@@ -344,7 +337,6 @@
   flex-shrink: 0;
 }
 
-/* Internship */
 .internship__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -379,7 +371,6 @@
   font-size: 15px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 767px) {
   .hero {
     min-height: auto;

@@ -3,7 +3,7 @@ import { useInView } from '../hooks/useInView';
 import { ChevronDown, Code2, Palette, Smartphone, Terminal } from 'lucide-react';
 import './Home.css';
 
-export default function Home() {
+function Home() {
   const [aboutRef, aboutInView] = useInView();
   const [skillsRef, skillsInView] = useInView();
   const [qualitiesRef, qualitiesInView] = useInView();
@@ -18,7 +18,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* Hero Section */}
       <section className="hero">
         <div className="hero__content">
           <div className="hero__avatar-wrapper">
@@ -57,7 +56,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
       <section
         ref={aboutRef}
         className={`section about ${aboutInView ? 'section--visible' : ''}`}
@@ -99,7 +97,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section
         ref={skillsRef}
         className={`section skills ${skillsInView ? 'section--visible' : ''}`}
@@ -135,7 +132,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Qualities Section */}
       <section
         ref={qualitiesRef}
         className={`section qualities ${qualitiesInView ? 'section--visible' : ''}`}
@@ -153,7 +149,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Internship Section */}
       <section
         ref={internshipRef}
         className={`section internship ${internshipInView ? 'section--visible' : ''}`}
@@ -179,3 +174,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+export default Home;
